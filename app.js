@@ -128,7 +128,9 @@
 // var convert = userInput[0].toUpperCase()+userInput.slice(1).toLocaleLowerCase();
 // document.write(convert);
 
-///////////// 12,13 skip
+///////////// 
+
+// Question NO 12
 
 // var num = 39.36;
 // document.write("value : "+num+"<br />");
@@ -139,6 +141,28 @@
 // document.write(" <br />Type : "+typeof change);
 
 ///////////////////////
+
+// Question No 13
+
+
+// var user = prompt("Enter the user name \nDon't enter special character [@!,.]");
+// var array = [33,44,46,64];
+// var flag = false;
+
+// for(var i = 0 ; i < user.length ; i++){
+//     for(var j = 0 ; j < array.length ; j++){
+//          if(user.charAt(i).charCodeAt() == array[j]){
+//           alert("Please Enter the valid user name");
+//           flag = true;  
+//           break
+//          }
+//     }
+// }
+// if(flag == false){
+//    alert("valid user name")
+// }
+
+//////////////////////////
 
 //// Question No 14
 
@@ -159,7 +183,26 @@
 //     document.write("We are sorry"+find+" is <strong> not available </strong> in a bakery")
 // }
 
-//////////////////// 15,16 skip
+//////////////////// 
+
+// Question No 15
+
+
+
+
+/////////////////////////////////
+
+// Question No 16
+
+// var university = "University of karachi";
+// var split = university.split("");
+
+// for(var i = 0 ; i < split.length; i++){
+//     document.write(split[i]+"<br />")
+// }
+
+///////////////////////////////
+
 
 // Question No 17
 
@@ -174,5 +217,40 @@
 
 
 
-//// 18 skip
+//////////////////////////
+
+// Question No 18
+
+// var text =  "The quick brown fox jumps over the lazy dog.";
+// var num = 0;
+
+// for(var i = 0 ; i < text.length ; i++){
+//     if(text.slice(i ,i+3).toLowerCase() === "the"){
+//         num++
+//     }
+// }
+
+// console.log(num)
+
+
+
+var user = prompt("Enter the password \nContain on Alphbet and number \nAt least 6 Character \nDon't Start with Number");
+var Flag = false;
+
+if(user.length >= 6){
+    for(var i = 0 ; i <= 10 ; i++){
+        if(i == user.charAt(0)){
+        document.write("please can't begin with a number <br />");
+       document.write("Enter a valid password");
+       Flag = true;
+        break
+    } 
+}
+}else if(user.length < 6){
+    document.write("Minimum 6 charachter required for password");
+    Flag = true;
+}
+if(Flag == false){
+    document.write("valid password")
+}
 
