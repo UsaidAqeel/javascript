@@ -188,6 +188,26 @@
 // Question No 15
 
 
+// var user = prompt("Enter the password \nContain on Alphbet and number \nAt least 6 Character \nDon't Start with Number");
+// var Flag = false;
+
+// if(user.length >= 6){
+//     for(var i = 0 ; i <= 10 ; i++){
+//         if(i == user.charAt(0)){
+//         document.write("please can't begin with a number <br />");
+//        document.write("Enter a valid password");
+//        Flag = true;
+//         break
+//     } 
+// }
+// }else if(user.length < 6){
+//     document.write("Minimum 6 charachter required for password");
+//     Flag = true;
+// }
+// if(Flag == false){
+//     document.write("valid password")
+// }
+
 
 
 /////////////////////////////////
@@ -233,24 +253,4 @@
 // console.log(num)
 
 
-
-var user = prompt("Enter the password \nContain on Alphbet and number \nAt least 6 Character \nDon't Start with Number");
-var Flag = false;
-
-if(user.length >= 6){
-    for(var i = 0 ; i <= 10 ; i++){
-        if(i == user.charAt(0)){
-        document.write("please can't begin with a number <br />");
-       document.write("Enter a valid password");
-       Flag = true;
-        break
-    } 
-}
-}else if(user.length < 6){
-    document.write("Minimum 6 charachter required for password");
-    Flag = true;
-}
-if(Flag == false){
-    document.write("valid password")
-}
 
